@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>GUITAR2.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/search.css" rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/searchGuitars.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="header_top">
+		<div class="container">
+			<div class="logo"><p style="font-size: 30px">GUITAR2.0</p></div>	
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="column_center">
+	<div class="container">
+		<div class="search">
+			<div class="row">
+				<div class="col-lg-7 col-xs-2"></div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="main">
+	<div class="content_top">
+		<div class="container">
+			<div class="col-md-12 ">
+				<div class="sortbox">
+					<div class="siftbox clearfix"> <span class="label"><font color="#000000">输入条件:</font></span>
+						<div id="condition"></div>
+					</div>
+					<div class="col-xs-12 col-md-12 col-lg-12">
+				<div class="input-group">
+					<span class="input-group-addon" aria-hidden="true">制&ensp;造&ensp;商</span>
+					<input type="text" name="builder" id="builder" placeholder="输入制造商..." class="form-control"/>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon" aria-hidden="true">类&emsp;&emsp;型</span>
+					<input type="text" name="type" id="type" placeholder="输入类型..." class="form-control"/>	
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon" aria-hidden="true">背板木料</span>
+					<input type="text" name="backWood" id="backWood" placeholder="输入背部木料..." class="form-control"/>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon" aria-hidden="true">面板木料</span>
+					<input type="text" name="topWood" id="topWood" placeholder="输入顶部木料..." class="form-control"/>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon" aria-hidden="true">型&emsp;&emsp;号</span>
+					<input type="text" name="model" id="model" placeholder="输入型号..." class="form-control"/>
+				</div>
+				<div style="text-align:center;margin-top:10px;">
+					<button class="btn btn-primary btn-block" onclick="search();" >查询</button>			
+				</div>			
+			</div>
+				</div>
+				
+				
+	<div class="table-responsive">
+		<table class="table hovertable" width="80%" align="center" style="margin-top:20px">
+			<tr>
+			<th align="center">商品编号</th><th align="center">制造商</th><th align="center">型号</th><th align="center">类型</th><th align="center">面板材质</th><th align="center">背板材质</th><th align="center">价格</th>
+			</tr>
+		</table>
+	</div>			
+		<div style="text-align:center;clear:both"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
